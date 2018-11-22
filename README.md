@@ -9,7 +9,14 @@ Quick links: [Using](#using) | [Installing](#installing) | [Contributing](#contr
 
 ## Using
 
+Control DJI Tello with the WP-CLI command.
 
+```
+$ wp drone takeoff
+$ wp drone cw 360
+$ wp drone flip left
+$ wp drone land
+```
 
 ## Installing
 
