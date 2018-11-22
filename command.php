@@ -144,8 +144,8 @@ class Drone_Command extends WP_CLI_Command
 	private function connect( $assoc_args )
     {
 		$this->socket = socket_create( AF_INET, SOCK_DGRAM, SOL_UDP );
-        socket_bind( $this->socket, $this->localhost, $this->localport );
-        socket_connect( $this->socket, $this->get_ip( $assoc_args ), $this->get_port( $assoc_args ) );
+		socket_bind( $this->socket, $this->localhost, $this->localport );
+		socket_connect( $this->socket, $this->get_ip( $assoc_args ), $this->get_port( $assoc_args ) );
     }
 
     private function send_command( $command )
