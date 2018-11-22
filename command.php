@@ -35,12 +35,6 @@ class Drone_Command extends WP_CLI_Command
 		$this->connect( $assoc_args );
 		$this->send_command('command');
 		$this->send_command( 'takeoff' );
-
-		while ( true ) {
-			sleep( 10 );
-			$per = $this->send_command('battery?');
-			WP_CLI::line( $per . '%' );
-		}
 	}
 
 	/**
