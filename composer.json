@@ -1,0 +1,19 @@
+{
+    "name": "miya0001/drone-command",
+    "description": "",
+    "type": "wp-cli-package",
+    "homepage": "https://github.com/miya0001/drone-command",
+    "license": "MIT",
+    "authors": [],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "files": [ "command.php" ]
+    },
+    "require": {
+        "wp-cli/wp-cli": "^1.1.0"
+    },
+    "require-dev": {
+        "behat/behat": "~2.5"
+    }
+}
